@@ -17,6 +17,8 @@
       }
       html,
       body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Microsoft JhengHei', 'Segoe UI', Roboto,
+          Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         width: 100vw;
         min-height: 100vh;
         margin: 0;
@@ -50,6 +52,16 @@
         text-align: center;
         font-size: 12px;
       }
+
+      .ar-qrcode {
+        width: 150px;
+        margin: 20px auto;
+      }
+
+      img {
+        max-width: 150px;
+        max-height: 150px;
+      }
     </style>
   </head>
   <body>
@@ -69,10 +81,17 @@
         environment-image="./hdri/schadowplatz_4k.hdr"
         poster="./preview/Liquor.png"
         loading="eager"
+        alt="一個紅色 Lidemy 野餐聚設計包裝的虛擬酒精能量飲品易開罐"
       ></model-viewer>
+      <div class="ar-qrcode">
+        <img src="./qrcode/qrcode_zanwan.github.io.png" alt="AR 瀏覽 QRCode" />
+      </div>
+      <p><b>AR 瀏覽碼</b></p>
+      <p>iOS 使用者請掃碼後使用 Safari 瀏覽，Android 我沒有沒測過ㄅ歉</p>
+      <p>進入 AR 模式可能需要點時間，兩指捏可縮小模型放置</p>
       <form
         method="get"
-        action="https://github.com/zanwan/lithium-egg/archive/refs/heads/master.zip"
+        action="https://github.com/zanwan/lithium-liquor/archive/refs/heads/master.zip"
       >
         <button type="submit">收藏 Liquor</button>
       </form>
