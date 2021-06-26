@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lidemy 5th 野餐聚紀念品</title>
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 100vw;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      }
+      model-viewer {
+        width: 50%;
+        height: 350px;
+        margin: 0 auto;
+      }
+      button {
+        display: block;
+        margin: 40px auto 10px auto;
+        font-size: 1rem;
+        border: none;
+        color: white;
+        background-color: #e0232f;
+        border-radius: 50px;
+        padding: 4px 16px;
+      }
+
+      button:hover {
+        background-color: #a11b23;
+        cursor: grab;
+      }
+
+      p {
+        display: block;
+        margin: 5px auto;
+        text-align: center;
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <model-viewer
+        src="./glb/Liquor.glb"
+        ar
+        ar-modes="webxr scene-viewer quick-look"
+        ar-placement="floor"
+        camera-controls
+        auto-rotate
+        environment-image="neutral"
+        exposure="1"
+        shadow-intensity="1"
+        shadow-softness="1"
+        skybox-image="./hdri/greenwich_park_1k.hdr"
+        environment-image="./hdri/schadowplatz_4k.hdr"
+        poster="./Liquor.png"
+        loading="eager"
+      ></model-viewer>
+      <form
+        method="get"
+        action="https://github.com/zanwan/lithium-egg/archive/refs/heads/master.zip"
+      >
+        <button type="submit">收藏 Liquor</button>
+      </form>
+      <p>將下載這份網頁專案與 3D 模型</p>
+    </main>
+    <br />
+    <br />
+  </body>
+</html>
